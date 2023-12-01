@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onload="getAllPost()">
+    
+    <h1>My post CRUD app </h1>
+
+    <form id="form" onsubmit="createPost(); return false" method="post">
+
+        <h2> Create Post</h2>
+
+        <label for="postTitle">postTitle:</label>
+        <input type="text" name="postTitle" id="postTitle" placeholder="enter your title name" required>
+
+        <br>
+        <br>
+
+        <label for="postText">postText:</label>
+        <input type="text" name="postText" id="postText" placeholder="enter your text name" required>
+
+        <br>
+        <br>
+
+        <button type="submit">submit post</button>
+        <br>
+        <br> 
+    </form>
+
+    <div id="result"></div>
+    <br>
+    <br>
+    <div id="post"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.js"></script>
+    <script type="module" src="/app.mjs"></script>
+</body>
+
+</html>
