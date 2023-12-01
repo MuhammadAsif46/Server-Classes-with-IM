@@ -1,0 +1,17 @@
+.comment {
+    border: 1px solid black;
+    margin-top: 1rem;
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.post-card{
+    box-shadow: 0px 0px 10px black;
+    border-radius: 15px;
+    padding: 1.5rem;
+}    
+
+.post-card>h3 {
+    margin: 0;
+}
+
